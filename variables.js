@@ -1,5 +1,5 @@
 //Vezbanje - zadatak:
-var a = -5;
+var a = -4;
 var b = 10;
 var c = 10;
 var d = 10;
@@ -14,5 +14,5 @@ if (a >= b && a >= c && a >= d && a >= e) {
 } else if (d >= a && d >= c && d >= d && d >= e) {
     console.log(d);
 } else {
-    console.log(e)
+    console.log("Changed!")
 }
