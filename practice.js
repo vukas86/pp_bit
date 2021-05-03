@@ -69,7 +69,7 @@ console.log(!!" ");*/
 /*var userAge = 150;
 if (userAge < 0 || userAge > 120) {
     console.log("age is not correct!")
-}*/
+}
 
 /*var a = -5;
 var b = 10;
@@ -87,7 +87,7 @@ if (a >= b && a >= c && a >= d && a >= e) {
     console.log(d);
 } else {
     console.log(e)
-}*/
+}
 
 /*var a = 4;
 var b = 10;
