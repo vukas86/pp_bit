@@ -210,9 +210,34 @@ switch (city) {
 
 var a = 15;
 var b = 10;
-var result = "+";
+var result = "/";
 
-switch ("result") {
-    case 
+var a = 10;
+var b = 0;
+var result = "/";
+
+switch (result) {
+    case "+":
+        console.log(a+b);
+    break
+    case "-":
+        console.log(a-b);
+        break
+    case "*":
+        console.log(a*b);
+        break
+    case "/":
+     {
+            switch (b) {
+                case 0 :
+                    console.log("The value cannot be 0!");
+                    
+            }
+        }
+    
+ console.log(a/b);
+    break
+    default :
+    console.log("incorrect value");
 }
 
