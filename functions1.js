@@ -158,3 +158,15 @@
 // }
 >>>>>>> 4a82b642a9f6b078f435f39be3177a263338fc6b
 // console.log(countAp([2, 4, 7, 8, 7, 7, 1], 7));
+5.
+function square(size) {
+    var star = "";
+    for (var i = 1; i <= size; i++) {
+        for (var j = 1; j <= size; j++) {
+            if (i === a || i === size || j === 1 || j === size)
+                star += "*";
+        }else {
+            star += " ";
+        }
+    }
+}
