@@ -17,7 +17,7 @@
 
 // function oddNum(a) {
 //     if (a % 2 === 1)
-//         return a;
+//         return true;
 // }
 
 // console.log(oddNum(3));
@@ -26,7 +26,7 @@
 
 // function digiT(n) {
 //     if (n > 99 && n < 1000)
-//         return n;
+//         return true;
 // }
 
 // console.log(digiT(356));
