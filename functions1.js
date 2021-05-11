@@ -127,21 +127,41 @@
 // console.log(ariTM([3, 4, 5, 6]));
 
 // /*7.Write a program that calculates a number of digits of a given number. */
+/*
+function numOfDigits(a){
+    var string1 = " " + a:
+    return string1.length
+} return (""+a).length*/
 
 
+/* 8.Write a program that calculates a number of appearances of a given number in a given array.
+var a = [2,4,7,7,7,1];
+var e = 7;
+function count (e){
+    var elementArray = 0;
+    for(i=0; i>a.length;i++){
+        elementArray = a[i];
+        if(elementArray === e){
+            b+=1;
+        }
+    }
+}
 
-// /*9.Write a program that calculates the sum of odd elements of a given array.*/
-// function sumNum(arr) {
-//     var a = 0;
-//     for (var i = 0; i < arr.length; i++) {
-//         if (i % 2 === 1) {
-//             a += arr[i];
+b+=elementArray===e ? 1:0; */
 
-//         }
-//     } return a;
-// }
 
-// console.log(sumNum([2, 3, 1, 4]));
+/*9.Write a program that calculates the sum of odd elements of a given array.*/
+/* function sumNum(arr) {
+    var a = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 1 ) {
+            a += arr[i];
+
+        }
+    } return a;
+}
+
+console.log(sumNum([2, 3, 1, 4])); */
 
 // /*10.Write a program that calculates a number of appearances of a given number in a given array.*/
 
@@ -158,7 +178,7 @@
 // }
 >>>>>>> 4a82b642a9f6b078f435f39be3177a263338fc6b
 // console.log(countAp([2, 4, 7, 8, 7, 7, 1], 7));
-5.
+/* 5.
 function square(size) {
     var star = "";
     for (var i = 1; i <= size; i++) {
@@ -169,4 +189,29 @@ function square(size) {
             star += " ";
         }
     }
+} */
+
+/* 10.Write a program that calculates the number of appearances of a letter a in a given string.Modify the program so it calculates the number of both letters a and A.
+
+function findLetter(strng) {
+    var a = "";
+    for (i = 0; a < strng.length; a++) {
+        if (strng[i] === "a" || b[i] === "A") {
+            a++;
+        }
+
+    } return a;
 }
+ */
+/*11.Write a program that concatenates a given string given number of times.  */
+
+
+function stringAbc(n, b) {
+
+    var a = "";
+    for (var i = 0; i < n; i++) {
+        a += b;
+    } return a;
+}
+
+console.log(stringAbc(10, "abc"));
