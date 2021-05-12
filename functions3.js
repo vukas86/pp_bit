@@ -28,4 +28,4 @@ function buildRow(num){
     return row;
 }
 
-console.log(buildRow(3));
+console.log(buildRow(5));

@@ -14,7 +14,7 @@ console.log(checkType("435"));
  */
 /* 2. Write a function to check whether a string is blank or not. */
 
-function checkString(a) {
+/* function checkString(a) {
     if (typeof a === "string") {
         if (a === " ") {
             return true;
@@ -29,7 +29,7 @@ function checkString(a) {
 }
 
 
-console.log(checkString(9));
+console.log(checkString(9)); */
 
 /* 3.Write a function that concatenates a given string n times (default is 1). */
 
@@ -38,7 +38,7 @@ console.log(checkString(9));
 num = num || 1
  */
 
-function stringHa(n) {
+/* function stringHa(n) {
     n = n || 1;
     var a = "";
     for (var i = 0; i < n; i++) {
@@ -46,11 +46,11 @@ function stringHa(n) {
     } return a;
 }
 
-console.log(stringHa());
+console.log(stringHa()); */
 
 /* 4.Write a function to count the number of letter occurrences in a string. */
 
-
+/* 
 function checkLetter(str, letter) {
     var a = 0;
     for (var i = 0; i < str.length; i++) {
@@ -60,7 +60,7 @@ function checkLetter(str, letter) {
     } return a;
 }
 
-console.log(checkLetter("Hello world", 'o'));
+console.log(checkLetter("Hello world", 'o')); */
 
 /* 5.Write a function to find the position of the first occurrence of a character in a string. The result should be the position of character. If there are no occurrences of the character, the function should return -1. */
 
@@ -68,15 +68,45 @@ console.log(checkLetter("Hello world", 'o'));
     var a = "";
     for(var i = 0; i<strng.length; i++){
         if(strng[i] == letter){
-           a+=i;
-        return a[i];
-    }else{
-        console.log('-1');
+           a=i;
+        return a;
     }
+        
+    }return a;
 }
-}
+
  
 console.log(occurCar("hello world", "e")); */
+
+/* function checkCn (strn, a){
+    var b = -1;
+    for(i=0; i<strn.length;i++){
+        if(strn[i]=== a){
+            b=i;
+            break;
+        }
+    }
+    return b;
+}
+
+console.log(occurCar("hello world", "e")); */
+
+
+
+/* 8. Write a function to find the position of the last occurrence of a character in a string. The result should be in human numeration form. If there are no occurrences of the character, function should return -1. */
+function occurLast (str, letter){
+    var a = "";
+    for(i=str.length-1; i>=0; i--){
+        if(str[i] == letter){
+            a=i;
+         return a;
+     }
+         
+     }return -1;
+ }
+
+
+console.log(occurLast("hello world", "o"));
 
 /* 7.Write a function to convert string into an array. Space in a string should be represented as “null” in new array. */
 
