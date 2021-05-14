@@ -82,3 +82,9 @@ console.log(elem(2, "none"));
 
 
 //8.Write a function to find a word within a string.
+
+
+//9.Write a function to hide email address. 
+// flag JS
+
+//10. Write a program to find the most frequent item of an array.
