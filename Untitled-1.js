@@ -1,0 +1,1 @@
+/* 2.Write a program to join all elements of the array into a string skipping elements that are undefined, null, NaN or Infinity */
