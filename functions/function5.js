@@ -50,7 +50,7 @@ console.log(doStuff([3, 500, -10, 149, 53, 414, 1, 19, 0]));
 number of points for each student. Display students names with their corresponding
 grade. */
 
-function gradeStud(arr1, arr2) {
+/* function gradeStud(arr1, arr2) {
     var output = "";
     for (i = 0; i < arr1.length; i++) {
         if (arr2[i] < 51) {
@@ -70,6 +70,32 @@ function gradeStud(arr1, arr2) {
     }
     return output;
 }
+ */
+
+var students = ["Pera", "Mika", "Marina", "Zmika", "Daca", "Vlaca"];
+var grades = [88, 45, 83, 72, 99, 51];
+var ocena;
+
+for (var i = 0; i<students.length. i++) {
+    if (points[i] > 90) {
+        ocena = 10;
+    }else if (points[i] > 80) {
+        ocena = 9;
+    }else if (points[i] > 70) {
+        ocena = 8;
+    }
+    else if (points[i] > 60) {
+        ocena = 7;
+    }else if (points[i] > 50) {
+        ocena = 6;
+    }else {
+        ocena = 5
+    }
+    if (ocena>5)
+    console.log(students[i] + " acquired " + points[i] + " and earned a " + ocena);
+    else
+    console.log("You Failed");
+}
 
 console.log(gradeStud(["Micahel", "Anne", "Frank", "Joe", "John", "David", "Mark", "Bill"], [50, 39, 63, 72, 99, 51, 83, 59]));
 
@@ -77,7 +103,17 @@ console.log(gradeStud(["Micahel", "Anne", "Frank", "Joe", "John", "David", "Mark
 subtracts all the odd numbers 1 to 500 from the calculated sum. The result should then
 be multiplied by 12.5 and displayed in console. */
 
-
+function doWeirdStuff() {
+    var sum = 0;
+    for (var i = 1; i<=1000; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+        }else if (i<=500){
+            sum-=i;
+        }
+    }
+    return sum * 12.5;
+}
 
 /* 7.Define a 10 element array. Take the first two letters from every string (that has at least 2
     letters) in the array and create a new string from them. Print it out in the console. */
@@ -112,7 +148,7 @@ console.log(reverseOrder("Belgrade Institute of Technology"));
 Dont display two of the same numbers at the same time. Display the number of possible
 combinations, as well. (E.g. (1.2),(2,1) is allowed, but not (1,1), (2,2)...). */
 
-function combinations(n) {
+/* function combinations(n) {
 
     var output = "";
     if (n > 7) return "The number should be less then 7!";
@@ -127,7 +163,23 @@ function combinations(n) {
     return output;
 }
 
-console.log(combinations(5));
+console.log(combinations(5)); */
+
+
+function pair () {
+    for (var i = 1; i <= 7; i++) {
+        var output = ""
+        for (var j = 1; j<=7; j++) {
+            if (i !== j) {
+                output += "(" + i + ", " + j + ")";
+            }else{
+                output += " ";
+            }
+        }
+        console.log(output);
+        output = "";
+    }
+}
 
 /* >>Version 2 << */
 function combinations(num) {
@@ -170,7 +222,7 @@ console.log(primeNum(28));
     11. Check if a given string is a palindrome (spaces are ignored).
 Input: eye | Geek | a nut for a jar of tuna */
 
-function palin(str) {
+/* function palin(str) {
     var a = "";
     var isPol = true;
     for (var i = 0; i < str.length; i++) {
@@ -187,13 +239,23 @@ function palin(str) {
     return isPol;
 }
 
-console.log(palin("ana ne voli milovana"));
+console.log(palin("ana ne voli milovana")); */
+
+function isPalindrom(str) {
+    var ocisceno = "";
+    var ociscenoZGuza = "";
+    for (var i = 0; i<str.length; i++) {
+        ocisceno += sanitize(str[i]);
+        ociscenoZGuza += sanitize(str[str.length - 1 - i])
+    }
+    return ocisceno === ociscenoZGuza;
+}
 
 /* 12. Write a program that calculates the greatest common divisor of two integers. Note: The
 greatest common divisor of two non-zero integers is the greatest positive number that
 divides both numbers with no remainder. */
 
-function integers(num1, num2) {
+/* function integers(num1, num2) {
     var p;
     if (num1 < num2) {
         p = num1
@@ -212,4 +274,17 @@ function integers(num1, num2) {
 }
 
 console.log(integers(192, 42));
-console.log(integers(81, 9));
+console.log(integers(81, 9)); */
+
+function commonDivisor(a,b) {
+    if(a === b) return a;
+    var min = a<b ?a:b;
+    var max = a>b ? a:b;
+
+    for(var i = min; i>= 2; i --) {
+        if (min % i === 0 && max % i === 0){
+            return i;
+        }
+    }
+    return 1;
+}
